@@ -77,7 +77,7 @@ body, html {
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -92,7 +92,7 @@ body, html {
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
+
 .modal-content {
   margin: auto;
   display: block;
@@ -100,7 +100,7 @@ body, html {
   max-width: 700px;
 }
 
-/* Caption of Modal Image */
+
 #caption {
   margin: auto;
   display: block;
@@ -112,7 +112,6 @@ body, html {
   height: 150px;
 }
 
-/* Add Animation */
 .modal-content, #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -130,7 +129,6 @@ body, html {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -148,7 +146,6 @@ body, html {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
@@ -176,7 +173,6 @@ body, html {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -186,10 +182,8 @@ img.onclick = function(){
   captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
